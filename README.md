@@ -1,6 +1,6 @@
 # Noisypy Sphinx Theme
 
-This is the Sphinx theme used by Noisypy, which has been created to improve the readability of the autodoc-generated documentation. It is based on the (Hangulize)[https://github.com/sublee/sublee-sphinx-themes] theme, by Heungsub Lee.
+This is the Sphinx theme used by Noisypy, which has been created to improve the readability of the autodoc-generated documentation. It is based on the [Hangulize](https://github.com/sublee/sublee-sphinx-themes) theme, by Heungsub Lee.
 
 ## Distinguishing Features
 
