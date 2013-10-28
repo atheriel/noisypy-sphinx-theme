@@ -1,0 +1,30 @@
+{% extends "basic/layout.html" %}
+
+{# wrap contents #}
+{% block header %}
+  <div class="wrap">
+    {{ super() }}
+{% endblock %}
+{% block footer %}
+    {{ super() }}
+  </div>
+{% endblock %}
+
+{% block relbar1 %}
+  {% if theme_show_navigation == 'true' %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+{% block relbar2 %}
+  {% if theme_github_fork %}
+    <a href="http://github.com/{{ theme_github_fork }}" style="
+      display: block; position: absolute; top: 0; right: 0;
+      width: 149px; height: 149px; text-indent: -9999px;
+      background: url('{{ pathto(theme_github_ribbon, 1) }}') no-repeat;
+    ">Fork me on GitHub</a>
+  {% endif %}
+{% endblock %}
+{% block sidebar1 %}{% endblock %}
+{% block sidebar2 %}{% endblock %}
+{% block sidebarsourcelink %}{% endblock %}
+{% block sidebarsearch %}{% endblock %}

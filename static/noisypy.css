@@ -1,0 +1,261 @@
+@import url(basic.css);
+/* Google Web Fonts */
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Open+Sans:400italic,600italic,400,600);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #765;
+  background-color: #f6f6eb;
+}
+
+/* Center the search field. */
+form {
+  text-align: center;
+  margin: 0 auto;
+}
+
+td.field-body > em, td.field-body > a > em {
+  font-family: 'Lucida Console', monospace;
+  font-size: 15px;
+  font-style: normal;
+  background: #e6ecf4;
+}
+
+th.field-name {
+  padding-left: 5px;
+}
+
+/*
+ * Style line numbers in the same fashion as the pigments.
+ */
+
+td.linenos pre {
+  font-size: 0.8em;
+  line-height: 1.4;
+  padding: 8px;
+  padding-top: 10px;
+  margin: 0.25em 0;
+  border: 4px solid #e9e6d7;
+  background: #333333;
+}
+
+/*
+ * Adds tags next to classes/functions/attributes to identify them.
+ */
+
+dl.class > dt > em.property, /* For "class". */
+dl.attribute > dt > tt.descname:before, /* For "attr". */
+dl.method > dt > tt.descname:before, /* For "func". */
+dl.function > dt > tt.descclassname:before {
+  font-family: 'Lucida Console', monospace;
+  font-style: normal;
+  font-size: 15px;
+  color: #eeeeee;
+  margin-right: 10px;
+}
+
+dl.class > dt > em.property {
+  background: #ce6049;
+  margin-right: 10px;
+  padding: 5px 0px 5px 5px;
+}
+
+dl.attribute > dt > tt.descname:before {
+  content: "attr";
+  background: #369;
+  padding: 2px 5px 2px 5px;
+}
+
+dl.method > dt > tt.descname:before,
+dl.function > dt > tt.descclassname:before {
+  content: "func";
+  background: #9e7da2;
+  padding: 2px 5px 2px 5px;
+}
+
+/* Headers */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bitter', serif;
+}
+
+h1 {
+  padding: 20px 0px;
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+  font-weight: normal;
+  color: #332;
+}
+
+h2 {
+  padding-top: 15px;
+  border-bottom: 1px solid #e9e6d7;
+  font-weight: normal;
+  color: #332;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+a:link {
+  color: #369;
+}
+a:visited {
+  color: #669;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Prevents the underlining of the paragraph markers. */
+a.headerlink {
+  text-decoration: none; 
+}
+
+.highlight {
+  border: 4px solid #e9e6d7;
+  margin: 0.25em 0;
+}
+
+.highlight pre, .pre {
+  font-family: 'Lucida Console', Monaco, monospace;
+  color: #ddd;
+}
+
+.highlight pre {
+  margin: 9px 14px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.pre {
+  color: #333;
+  background: #e6ecf4;
+}
+
+dt:target, .highlighted {
+  background: #efb;
+}
+
+.figure {
+  text-align: center;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.footer {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #e9e6d7;
+  font-size: 11px;
+  text-align: center;
+}
+
+.tocwrapper {
+  padding: 0;
+  margin: 210px auto 0;
+  font-size: 12px;
+}
+
+.toc {
+  display: none;
+  margin-top: 15px;
+  padding: 10px;
+  border: solid #e9e6d7;
+  border-width: 1px 0;
+}
+
+.toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.toc li {
+  margin: 0;
+  padding: 0;
+}
+
+.toc ul ul li {
+  background: url(tree.gif) no-repeat 5px 0;
+  line-height: 20px;
+  margin-left: 6px;
+  padding-left: 16px;
+}
+
+.toc ul ul li:last-child {
+  background-repeat: no-repeat;
+  background-position: 5px -1766px;
+}
+
+.toc > ul > li > a {
+  background: url(favicon.ico) no-repeat 4px;
+  padding: 2px;
+  padding-left: 24px;
+  font-weight: bolder;
+  color: #554;
+}
+
+.toc a tt {
+  font-weight: normal;
+}
+
+.showtoc, .hidetoc {
+  font-size: 11px;
+  text-align: center;
+  color: #ba9;
+}
+
+.showtoc span, .hidetoc span {
+  cursor: pointer;
+  color: #765;
+}
+
+.hidetoc {
+  display: none;
+}
+
+.field-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.note {
+  border: 1px solid #eed;
+  font-size: 11px;
+  background: #ffe;
+}
+.admonition p {
+  margin: 0.5em 0;
+}
+
+table.docutils {
+  border: 2px solid #e9e6d7;
+}
+table.docutils td, table.docutils th {
+  border: 1px solid #e9e6d7;
+  padding: 5px;
+  /*font-size: 12px;*/
+  color: #333;
+}
+table.docutils {
+  margin: 0;
+  background: #f8f8f0;
+}
+table.field-list td, table.field-list th {
+  padding: 0;
+  padding-right: 20px;
+}
+table.field-list {
+  border: none;
+  margin-bottom: 10px;
+  background: transparent;
+}
